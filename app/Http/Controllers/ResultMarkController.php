@@ -31,14 +31,7 @@ class ResultMarkController extends Controller
                 //'staff_id' => 'required|exists:users,id',
             ]);
     
-            // // Ensure the authenticated user is authorized to store marks for this subject
-            // $subject = Subjects::findOrFail($validatedData['subject_id']);
-    
-            // $authenticatedUserId = Auth::id();
-            
-            // if ($subject->lecturer_id !== $authenticatedUserId) {
-            //     return response()->json(['error' => 'You are not authorized to store marks for this subject.'], 403);
-            // }
+       
     
             // Retrieve student details
             $studentName = $validatedData['student_name'];
