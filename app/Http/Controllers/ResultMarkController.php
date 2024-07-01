@@ -28,7 +28,7 @@ class ResultMarkController extends Controller
                 'final_theory' => 'required|numeric',
                 'final_practice' => 'required|numeric',
                 'subject_id' => 'required|exists:subjects,id',
-                //'staff_id' => 'required|exists:users,id',
+              
             ]);
     
        
